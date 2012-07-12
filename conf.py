@@ -27,6 +27,7 @@
 
 post_pages = (
     ("posts/*.txt", "posts", "post.tmpl", True),
+    ("posts/*.rst", "posts", "post.tmpl", True),
     ("stories/*.txt", "stories", "story.tmpl", False),
 )
 
