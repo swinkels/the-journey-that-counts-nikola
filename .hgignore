@@ -1,0 +1,6 @@
+syntax: glob
+
+.doit.db
+cache
+files
+output
