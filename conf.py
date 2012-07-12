@@ -168,7 +168,7 @@ CONTENT_FOOTER = u'Contents &copy; 2011-2012 <a href=mailto:"swinkels.pieter@yah
 # To enable comments via Disqus, you need to create a forum at
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
 # If you want to disable comments, set it to False.
-DISQUS_FORUM = "nikolademo"
+DISQUS_FORUM = "the-journey-that-counts"
 
 # Enable Addthis social buttons?
 # Defaults to true
