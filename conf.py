@@ -142,11 +142,11 @@ USE_FILENAME_AS_TITLE = True
 ##############################################################################
 
 # Data about this site
-BLOG_AUTHOR = "Your Name"
-BLOG_TITLE = "Demo Site"
-BLOG_URL = "http://nikola.ralsina.com.ar"
-BLOG_EMAIL = "joe@demo.site"
-BLOG_DESCRIPTION = "This is a demo site for Nikola."
+BLOG_AUTHOR = "Pieter Swinkels"
+BLOG_TITLE = "The journey that counts"
+BLOG_URL = "http://blog.journeythatcounts.nl"
+BLOG_EMAIL = "swinkels.pieter@yahoo.com"
+BLOG_DESCRIPTION = "A personal website."
 
 # Name of the theme to use. Themes are located in themes/theme_name
 THEME = 'site'
