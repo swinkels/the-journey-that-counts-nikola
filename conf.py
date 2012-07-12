@@ -163,7 +163,7 @@ LICENSE = """
     src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer
-CONTENT_FOOTER = u'Contents &copy; 2012 <a href=mailto:"ralsina@kde.org">Roberto Alsina</a>'
+CONTENT_FOOTER = u'Contents &copy; 2011-2012 <a href=mailto:"swinkels.pieter@yahoo.com">Pieter Swinkels</a> | Website powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
 
 # To enable comments via Disqus, you need to create a forum at
 # http://disqus.com, and set DISQUS_FORUM to the short name you selected.
@@ -232,9 +232,6 @@ GLOBAL_CONTEXT = {
         'en': (
             ('/archive.html', 'Archives'),
             ('/categories/index.html', 'Tags'),
-            ('/stories/about-nikola.html', 'About Nikola'),
-            ('/stories/handbook.html', 'The Nikola Handbook'),
-            ('http://nikola.ralsina.com.ar', 'Powered by Nikola!'),
             )
         }
     }
