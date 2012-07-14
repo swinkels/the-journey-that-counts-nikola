@@ -149,7 +149,7 @@ BLOG_EMAIL = "swinkels.pieter@yahoo.com"
 BLOG_DESCRIPTION = "A personal website."
 
 # Name of the theme to use. Themes are located in themes/theme_name
-THEME = 'site'
+THEME = 'swinkels'
 
 # Show only teasers in the index pages? Defaults to False.
 # INDEX_TEASERS = False
