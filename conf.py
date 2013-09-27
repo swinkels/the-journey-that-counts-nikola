@@ -226,15 +226,17 @@ SEARCH_FORM = ""
     #<!-- End of custom search -->
 #""" % BLOG_URL
 
-# Google analytics or whatever else you use. Added to the bottom of <body>
-# in the default template (base.tmpl).
-ANALYTICS = """
-    """
+BODY_END = """
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/assets/js/jquery-1.10.2.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+"""
 
 # Put in global_context things you want available on all your templates.
 # It can be anything, data, functions, modules, etc.
 GLOBAL_CONTEXT = {
-    'analytics': ANALYTICS,
     'blog_author': BLOG_AUTHOR,
     'blog_title': BLOG_TITLE,
     'blog_url': BLOG_URL,
@@ -242,7 +244,6 @@ GLOBAL_CONTEXT = {
     'translations': TRANSLATIONS,
     'license': LICENSE,
     'search_form': SEARCH_FORM,
-    # 'disqus_forum': DISQUS_FORUM,
     'content_footer': CONTENT_FOOTER,
     'rss_path': RSS_PATH,
     'rss_link': RSS_LINK,
