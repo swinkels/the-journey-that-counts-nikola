@@ -25,16 +25,19 @@
 # rss feeds.
 #
 
-post_pages = (
-    ("posts/*.txt", "posts", "post.tmpl", True),
-    ("posts/*.rst", "posts", "post.tmpl", True),
-    ("stories/*.txt", "stories", "story.tmpl", False),
+POSTS = (
+    ("_posts/*.txt", "posts", "post.tmpl"),
+    ("_posts/*.rst", "posts", "post.tmpl"),
+)
+PAGES = (
+    # ("stories/*.txt", "stories", "story.tmpl"),
+    # ("stories/*.rst", "stories", "story.tmpl"),
 )
 
 # One or more folders containing files to be copied as-is into the output.
 # The format is a dictionary of "source" "relative destination".
 # Default is:
-# FILES_FOLDERS = {'files': '' }
+FILES_FOLDERS = {'files': '' }
 # Which means copy 'files' into 'output'
 
 # A mapping of languages to file-extensions that represent that language.
@@ -165,10 +168,15 @@ LICENSE = """
 # A small copyright notice for the page footer
 CONTENT_FOOTER = u'Contents &copy; 2011-2012 <a href=mailto:"swinkels.pieter@yahoo.com">Pieter Swinkels</a> | Website powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
 
-# To enable comments via Disqus, you need to create a forum at
-# http://disqus.com, and set DISQUS_FORUM to the short name you selected.
-# If you want to disable comments, set it to False.
-DISQUS_FORUM = "the-journey-that-counts"
+# To use comments, you can choose between different third party comment
+# systems, one of "disqus", "livefyre", "intensedebate", "moot",
+# "googleplus" or "facebook"
+# COMMENT_SYSTEM = "disqus"
+# And you also need to add your COMMENT_SYSTEM_ID which
+# depends on what comment system you use. The default is
+# "nikolademo" which is a test account for Disqus. More information
+# is in the manual.
+COMMENT_SYSTEM_ID = "the-journey-that-counts"
 
 # Enable Addthis social buttons?
 # Defaults to true
@@ -223,7 +231,7 @@ GLOBAL_CONTEXT = {
     'translations': TRANSLATIONS,
     'license': LICENSE,
     'search_form': SEARCH_FORM,
-    'disqus_forum': DISQUS_FORUM,
+    # 'disqus_forum': DISQUS_FORUM,
     'content_footer': CONTENT_FOOTER,
     'rss_path': RSS_PATH,
     'rss_link': RSS_LINK,
