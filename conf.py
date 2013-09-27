@@ -40,6 +40,17 @@ PAGES = (
 FILES_FOLDERS = {'files': '' }
 # Which means copy 'files' into 'output'
 
+# If True, publish future dated posts right away instead of scheduling them.
+# Defaults to False.
+# FUTURE_IS_NOW = False
+
+# If True, future dated posts are allowed in deployed output
+# Only the individual posts are published/deployed; not in indexes/sitemap
+# Generally, you want FUTURE_IS_NOW and DEPLOY_FUTURE to be the same value.
+# DEPLOY_FUTURE = False
+# If False, draft posts will not be deployed
+DEPLOY_DRAFTS = False
+
 # A mapping of languages to file-extensions that represent that language.
 # Feel free to add or delete extensions to any list, but don't add any new
 # compilers unless you write the interface for it yourself.
@@ -166,7 +177,7 @@ LICENSE = """
     src="http://i.creativecommons.org/l/by-nc-sa/2.5/ar/88x31.png"></a>"""
 
 # A small copyright notice for the page footer
-CONTENT_FOOTER = u'Contents &copy; 2011-2012 <a href=mailto:"swinkels.pieter@yahoo.com">Pieter Swinkels</a> | Website powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
+CONTENT_FOOTER = u'Contents &copy; 2011-2013 <a href=mailto:"swinkels.pieter@yahoo.com">Pieter Swinkels</a> | Website powered by <a href="http://nikola.ralsina.com.ar">Nikola</a>'
 
 # To use comments, you can choose between different third party comment
 # systems, one of "disqus", "livefyre", "intensedebate", "moot",
