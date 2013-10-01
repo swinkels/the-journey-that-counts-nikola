@@ -74,14 +74,29 @@ something like this::
 
   (nikola) $>
 
-To start serving the site locally, execute the following command::
+Visit the website
+-----------------
+
+The files for the static website are located in subdirectory output/. To serve
+these files at http://localhost:8000 [2]_, execute the following command::
 
   (nikola) $> nikola serve
 
-This will serve the static website at 127.0.0.1 at port 8000. Start your
-browser and visit http://127.0.0.1:8000 or http://localhost:8000 to see the
-website.
+Start your browser and visit http://localhost:8000 to see the website.
+
+To copy the files over to the server that actually hosts the website on the
+internet, execute the following command::
+
+  (nikola) $> nikola deploy
+
+The command uses rsync to copy the changed files over to the server. For that
+you need will the right credentials, e.g. the SSH keys or the password.
+
+The actual commands executed are specified in conf.py by the list of strings
+DEPLOY_COMMANDS. You will have to change that list if you require another
+deploy command, for example because you need to deploy to another server.
 
 .. _Nikola: http://getnikola.com/
 
-.. [1] If you do not know what a virtualenv is and why it is a good idea to use one, we refer to http://docs.python-guide.org/en/latest/dev/virtualenvs/ for more information.
+.. [1] if you do not know what a virtualenv is and why it is a good idea to use one, we refer to http://docs.python-guide.org/en/latest/dev/virtualenvs/ for more information
+.. [2] or equivalently, at 127.0.0.1:8000
