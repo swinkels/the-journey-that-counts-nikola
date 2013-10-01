@@ -16,10 +16,10 @@ The code in this repo has been build and tested using the 32-bit version of
 Xubuntu 12.04 LTS, Python 2.7.3 and virtualenv 1.7.1.2. You will need the
 Mercurial version control tool to clone the code repo.
 
-Getting started
----------------
+Build the website
+-----------------
 
-To work with this repo, first clone it from Bitbucket::
+To build the website, first clone it from Bitbucket::
 
   $> hg clone ssh://hg@bitbucket.org/swinkels/the-journey-that-counts-nikola
 
@@ -44,6 +44,16 @@ execute the following command in the root of the repo::
 Please note that even the local installation of Python packages requires the
 installation of (a couple of) system packages. These packages are installed
 using the sudo command, so you will need to provide your password.
+
+The blog posts are located in the Bitbucket repo at
+https://bitbucket.org/swinkels/the-journey-that-counts-contents. The Makefile
+clones this repo into subdirectoy "_posts"::
+
+  hg clone ssh://hg@bitbucket.org/swinkels/the-journey-that-counts-contents _posts
+
+As with the command to clone the main repo, this only works if you have ssh
+access to the repo. If you do not have ssh access, you can clone the repo using
+the https address mentioned in the Makefile itself.
 
 If the "make" command was successful, the last section of the output will look
 something like this::
