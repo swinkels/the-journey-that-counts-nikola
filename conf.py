@@ -110,7 +110,7 @@ REDIRECTIONS = []
 # "rsync -rav output/* joe@my.site:/srv/www/site"
 # And then do a backup, or ping pingomatic.
 # To do manual deployment, set it to []
-DEPLOY_COMMANDS = []
+DEPLOY_COMMANDS = ["rsync -Cavz output/ pieter@blog.journeythatcounts.nl:websites/blog-journey-that-counts/"]
 
 # Where the output site should be located
 # If you don't use an absolute path, it will be considered as relative
