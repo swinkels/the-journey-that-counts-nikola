@@ -74,6 +74,4 @@ website.
 
 .. _Nikola: http://getnikola.com/
 
-.. [1] If you do not know what a virtualenv is and why it is a good idea to use
-one, we refer to http://docs.python-guide.org/en/latest/dev/virtualenvs/ for
-more information.
+.. [1] If you do not know what a virtualenv is and why it is a good idea to use one, we refer to http://docs.python-guide.org/en/latest/dev/virtualenvs/ for more information.
