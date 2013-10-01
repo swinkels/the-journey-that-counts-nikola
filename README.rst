@@ -99,4 +99,4 @@ deploy command, for example because you need to deploy to another server.
 .. _Nikola: http://getnikola.com/
 
 .. [1] if you do not know what a virtualenv is and why it is a good idea to use one, we refer to http://docs.python-guide.org/en/latest/dev/virtualenvs/ for more information
-.. [2] or equivalently, at 127.0.0.1:8000
+.. [2] or equivalently, at http://127.0.0.1:8000
