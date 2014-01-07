@@ -21,7 +21,7 @@ ifdef VIRTUAL_ENV
 	@echo "**** Install the packages on which the required Python packages depend but"
 	@echo "**** that pip cannot install for us."
 	@echo
-	sudo apt-get install libxml2-dev libxslt-dev
+	sudo apt-get install libxml2-dev libxslt-dev python-dev
 	@echo
 	@echo "**** We assume the current working directory is a Mercurial repo so we"
 	@echo "**** update to the latest state."
