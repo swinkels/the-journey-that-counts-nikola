@@ -1,0 +1,7 @@
+.doit.db
+state_data.json
+
+cache/
+output/
+__pycache__/
+_posts/
