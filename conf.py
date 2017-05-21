@@ -141,20 +141,16 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 #}
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
-        ('/index.html', 'Home', 'icon-home'),
-        ('/archive.html', 'Archives', 'icon-folder-open-alt'),
-        ('/categories/index.html', 'Tags', 'icon-tags'),
-        ('/rss.xml', 'RSS', 'icon-rss'),
-        # ('https://getnikola.com', 'About me', 'icon-user'),
-        # ('https://twitter.com/getnikola', 'My Twitter', 'icon-twitter'),
-        # ('https://github.com/getnikola', 'My Github', 'icon-github'),
+        ("/archive.html", "Archive"),
+        ("/categories/", "Tags"),
+        ("/rss.xml", "RSS feed"),
     )
 }
 
 
 
 # Name of the theme to use.
-THEME = "zen"
+THEME = "bootstrap3"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
@@ -195,15 +191,17 @@ THEME_COLOR = '#5670d4'
 #     )
 
 POSTS = (
-    ("_posts/*.rst", "posts", "post.tmpl"),
-    ("_posts/*.md", "posts", "post.tmpl"),
-    ("_posts/*.txt", "posts", "post.tmpl"),
     ("_posts/*.html", "posts", "post.tmpl"),
+    ("_posts/*.md", "posts", "post.tmpl"),
+    ("_posts/*.org", "posts", "post.tmpl"),
+    ("_posts/*.rst", "posts", "post.tmpl"),
+    ("_posts/*.txt", "posts", "post.tmpl"),
 )
 PAGES = (
+    ("pages/*.html", "pages", "story.tmpl"),
+    ("pages/*.org", "posts", "post.tmpl"),
     ("pages/*.rst", "pages", "story.tmpl"),
     ("pages/*.txt", "pages", "story.tmpl"),
-    ("pages/*.html", "pages", "story.tmpl"),
 )
 
 
@@ -279,6 +277,7 @@ FILES_FOLDERS = {
 # 'markdown' is MarkDown
 # 'html' assumes the file is HTML and just copies it
 COMPILERS = {
+    "orgmode": ('.org',),
     "rest": ('.rst', '.txt'),
     "markdown": ('.md', '.mdown', '.markdown'),
     "textile": ('.textile',),
@@ -1250,7 +1249,7 @@ UNSLUGIFY_TITLES = True
 # If webassets is installed, bundle JS and CSS into single files to make
 # site loading faster in a HTTP/1.1 environment but is not recommended for
 # HTTP/2.0 when caching is used. Defaults to True.
-# USE_BUNDLES = True
+USE_BUNDLES = False
 
 # Plugins you don't want to use. Be careful :-)
 # DISABLED_PLUGINS = ["render_galleries"]
